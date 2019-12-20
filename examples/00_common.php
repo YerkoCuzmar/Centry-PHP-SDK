@@ -14,4 +14,4 @@ $redirectUri = "urn:ietf:wg:oauth:2.0:oob";
 $accessToken = isset($_SESSION["centry_demo_access_token"]) ? $_SESSION["centry_demo_access_token"] : null;
 $refreshToken = isset($_SESSION["centry_demo_refresh_token"]) ? $_SESSION["centry_demo_refresh_token"] : null;
 
-$sdk = new \Centry\Sdk($clientId, $clientSecret, $redirectUri, $accessToken, $refreshToken);
+$sdk = new \Centry\CentrySDK($clientId, $clientSecret, $redirectUri, $accessToken, $refreshToken);
